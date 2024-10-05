@@ -24,7 +24,7 @@ function Assistant() {
 
   //const assistantLanguage = 'Korean';
 
-  const [assistantLanguage, setAssistantLanguage] = useState('Chinese');
+  const [assistantLanguage, setAssistantLanguage] = useState('Korean');
 
   console.log("assistantLanguage", assistantLanguage);
 
