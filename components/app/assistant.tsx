@@ -68,8 +68,8 @@ function Assistant() {
           value={assistantLanguage}
           onChange={(e) => setAssistantLanguage(e.target.value)}
         >
-          <option value="Chinese">Chinese</option>
           <option value="Korean">Korean</option>
+          <option value="Chinese">Chinese</option>
           <option value="Japanese">Japanese</option>
           <option value="English">English</option>
         </select>
