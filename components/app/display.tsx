@@ -166,7 +166,7 @@ function Display() {
     
       
       
-      <div className="flex justify-center mt-4 min-h-20">
+      <div className="flex justify-center mt-4 min-h-10">
         {transcriptAssistant && (
           <p className="text-lg text-green-500">{transcriptAssistant}</p>
         )}
@@ -175,7 +175,7 @@ function Display() {
 
 
 
-      <div className="flex justify-center mt-4 min-h-20">
+      <div className="flex justify-center mt-4 min-h-10">
         {transcriptUser && (
           <p className="text-3xl text-blue-500">{transcriptUser}</p>
         )}

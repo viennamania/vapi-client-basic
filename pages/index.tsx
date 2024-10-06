@@ -45,7 +45,7 @@ export default function Home() {
 
       </div>
 
-      <div className="w-full flex flex-col items-center justify-center gap-4 mb-52">
+      <div className="w-full flex flex-col items-center justify-center gap-4 mb-10">
         
         <Assistant />
       </div>
