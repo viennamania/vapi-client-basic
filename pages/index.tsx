@@ -17,7 +17,7 @@ export default function Home() {
         {/* logo image */}
         <div className="flex justify-center">
         <Image
-          src="/logo-olga.png"
+          src="/chatbot-loading.gif"
           alt="AI Companion"
           width={80}
           height={80}
@@ -29,7 +29,7 @@ export default function Home() {
         <h1 className="text-3xl">Welcome to AI Companion</h1>
         */}
         {/* 중국어로 번역 */}
-        <h1 className="mt-5 text-xl">欢迎来到人工智能伴侣</h1>
+        <h1 className="mt-5 text-xl">인공지능 동반자에 오신 것을 환영합니다!</h1>
 
         {/*
         <p className="text-slate-600 mt-2 text-lg">

@@ -6,6 +6,8 @@ import { ShowsComponent } from "./shows";
 import { Ticket } from "./ticket";
 
 
+
+
 export enum CALL_STATUS {
   INACTIVE = "inactive",
   ACTIVE = "active",
@@ -13,7 +15,10 @@ export enum CALL_STATUS {
 }
 
 
+
 function Display() {
+  
+
   
   const [showList, setShowList] = React.useState<Array<(typeof shows)[number]>>(
     []
@@ -150,23 +155,30 @@ function Display() {
     };
 
   }, []);
+  
+
 
 
 
   return (
     <div className="flex flex-col items-center justify-center gap-4">
 
+    
       {transcriptAssistant && (
-        <>
+      
           <div className="flex justify-center mt-4">
             <p className="text-lg text-green-500">{transcriptAssistant}</p>
           </div>
+      )}
+
+      {transcriptUser && (
 
           <div className="flex justify-center mt-4">
             <p className="text-3xl text-blue-500">{transcriptUser}</p>
           </div>
-        </>
+        
       )}
+      
     
       {showList.length > 0 && status == "show" ? (
         

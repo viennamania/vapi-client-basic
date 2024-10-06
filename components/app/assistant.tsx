@@ -57,6 +57,7 @@ function Assistant() {
 
 
 
+
       <div className="chat-history">
         <Display />
       </div>
@@ -90,9 +91,6 @@ function Assistant() {
         )}
 
       </div>
-
-
-
      
     </div>
 
