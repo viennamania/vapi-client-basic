@@ -83,7 +83,7 @@ function Assistant() {
       )}
 
       {callStatus === CALL_STATUS.ACTIVE && (
-        <div className="w-full flex justify-center items-center mt-5 text-2xl">
+        <div className="w-full flex justify-center items-center mt-1 text-2xl">
           대화중입니다. 대화를 종료하려면 다시 버튼을 누르세요.
         </div>
       )}

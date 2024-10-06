@@ -65,15 +65,15 @@ const AssistantButton = ({
     >
       {callStatus === CALL_STATUS.ACTIVE ? (
         <Square
-          className="animate-pulse w-24 h-24"
+          className="animate-pulse w-20 h-20"
         />
       ) : callStatus === CALL_STATUS.LOADING ? (
         <Loader2
-          className="animate-spin w-24 h-24"
+          className="animate-spin w-20 h-20"
         />
       ) : (
         <Mic
-          className="w-24 h-24"
+          className="w-20 h-20"
         />
       )}
     </Button>
