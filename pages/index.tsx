@@ -19,8 +19,8 @@ export default function Home() {
         <Image
           src="/chatbot-loading.gif"
           alt="AI Companion"
-          width={80}
-          height={80}
+          width={150}
+          height={150}
           className="rounded-md"
         />
         </div>

@@ -75,6 +75,13 @@ function Assistant() {
           <option value="English">English</option>
         </select>
       </div>
+      {/* 아래 버튼을 누르면 인공지능 동반자와 대화할수 있습니다. */}
+      {callStatus !== CALL_STATUS.ACTIVE && callStatus !== CALL_STATUS.LOADING && (
+        <div className="w-full flex justify-center items-center mt-5 text-2xl">
+          아래 버튼을 누르면 인공지능 동반자와 대화할수 있습니다.
+        </div>
+      )}
+
 
 
       <div className="w-full flex justify-center items-center mt-24">
