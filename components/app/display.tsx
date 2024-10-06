@@ -164,20 +164,24 @@ function Display() {
     <div className="flex flex-col items-center justify-center gap-4">
 
     
-      {transcriptAssistant && (
       
-          <div className="flex justify-center mt-4">
-            <p className="text-lg text-green-500">{transcriptAssistant}</p>
-          </div>
-      )}
+      
+      <div className="flex justify-center mt-4 min-h-20">
+        {transcriptAssistant && (
+          <p className="text-lg text-green-500">{transcriptAssistant}</p>
+        )}
+      </div>
+    
 
-      {transcriptUser && (
 
-          <div className="flex justify-center mt-4">
-            <p className="text-3xl text-blue-500">{transcriptUser}</p>
-          </div>
+
+      <div className="flex justify-center mt-4 min-h-20">
+        {transcriptUser && (
+          <p className="text-3xl text-blue-500">{transcriptUser}</p>
+        )}
+      </div>
         
-      )}
+
       
     
       {showList.length > 0 && status == "show" ? (
