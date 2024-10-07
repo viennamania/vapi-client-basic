@@ -62,30 +62,34 @@ function Assistant() {
         <Display />
       </div>
       
-      {/* select assistant language */}
-      <div className="w-full flex justify-center items-center mt-0">
-        <select
-          disabled={callStatus === CALL_STATUS.ACTIVE || callStatus === CALL_STATUS.LOADING}
-          value={assistantLanguage}
-          onChange={(e) => setAssistantLanguage(e.target.value)}
-        >
-          <option value="Korean">Korean</option>
-          <option value="Chinese">Chinese</option>
-          <option value="Japanese">Japanese</option>
-          <option value="English">English</option>
-        </select>
-      </div>
-      {/* 아래 버튼을 누르면 인공지능 동반자와 대화할수 있습니다. */}
       {callStatus !== CALL_STATUS.ACTIVE && callStatus !== CALL_STATUS.LOADING && (
-        <div className="w-full flex justify-center items-center mt-5 text-2xl">
-          아래 버튼을 누르면 인공지능 동반자와 대화할수 있습니다.
+        <div className="w-full flex flex-col gap-2 justify-center items-center mt-5">
+
+          
+          <select
+            //disabled={callStatus === CALL_STATUS.ACTIVE || callStatus === CALL_STATUS.LOADING}
+            value={assistantLanguage}
+            onChange={(e) => setAssistantLanguage(e.target.value)}
+          >
+            <option value="Korean">Korean</option>
+            <option value="Chinese">Chinese</option>
+            <option value="Japanese">Japanese</option>
+            <option value="English">English</option>
+          </select>
+          
+
+
+          <p className="mt-5 text-2xl text-center">
+            아래 버튼을 누르면 인공지능 동반자와 대화할수 있습니다.
+          </p>
+
         </div>
       )}
 
       {callStatus === CALL_STATUS.ACTIVE && (
-        <div className="w-full flex justify-center items-center mt-1 text-2xl">
-          대화중입니다. 대화를 종료하려면 다시 버튼을 누르세요.
-        </div>
+        <p className=" mt-1 text-2xl text-center">
+          대화중입니다. 대화를 그만하시려면 다시 버튼을 누르세요.
+        </p>
       )}
 
 
