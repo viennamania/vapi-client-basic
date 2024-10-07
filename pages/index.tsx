@@ -16,13 +16,13 @@ export default function Home() {
 
         {/* logo image */}
         <div className="flex justify-center">
-        <Image
-          src="/chatbot-loading.gif"
-          alt="AI Companion"
-          width={150}
-          height={150}
-          className="rounded-md"
-        />
+          <Image
+            src="/therapist2.png"
+            alt="AI Companion"
+            width={150}
+            height={150}
+            className="rounded-md"
+          />
         </div>
 
         {/*

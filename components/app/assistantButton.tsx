@@ -2,7 +2,7 @@ import { CALL_STATUS, useVapi } from "@/hooks/useVapi";
 import { Loader2, Mic, Square } from "lucide-react";
 import { Button } from "../ui/button";
 
-
+import Image from "next/image";
 
 const AssistantButton = ({
   
@@ -64,9 +64,11 @@ const AssistantButton = ({
       }
     >
       {callStatus === CALL_STATUS.ACTIVE ? (
-        <Square
-          className="animate-pulse w-20 h-20"
-        />
+        <div className="flex flex-col items-center justify-center">
+          <Square
+            className="animate-pulse w-20 h-20"
+          />
+        </div>
       ) : callStatus === CALL_STATUS.LOADING ? (
         <Loader2
           className="animate-spin w-20 h-20"
