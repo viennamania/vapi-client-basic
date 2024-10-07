@@ -35,8 +35,8 @@ const AssistantButton = ({
 
   const buttonStyle = {
     borderRadius: "50%",
-    width: "160px",
-    height: "160px",
+    width: "140px",
+    height: "140px",
     color: "white",
     border: "none",
     boxShadow: `1px 1px ${100 + audioLevel * 40}px ${audioLevel * 100}px ${color}`,
@@ -66,16 +66,16 @@ const AssistantButton = ({
       {callStatus === CALL_STATUS.ACTIVE ? (
         <div className="flex flex-col items-center justify-center">
           <Square
-            className="animate-pulse w-20 h-20"
+            className="animate-pulse w-16 h-16"
           />
         </div>
       ) : callStatus === CALL_STATUS.LOADING ? (
         <Loader2
-          className="animate-spin w-20 h-20"
+          className="animate-spin w-16 h-16"
         />
       ) : (
         <Mic
-          className="w-20 h-20"
+          className="w-16 h-16"
         />
       )}
     </Button>
