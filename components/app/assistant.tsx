@@ -90,7 +90,13 @@ function Assistant() {
 
 
 
-      <div className="w-full flex justify-center items-center mt-24">
+      <div className="w-full flex flex-col gap-2 justify-center items-center mt-24">
+
+        {callStatus === CALL_STATUS.LOADING && (
+          <div className="text-2xl text-center">
+            <p>인공지능 동반자와 연결중입니다. 잠시만 기다려주세요.</p>
+          </div>
+        )}
 
         {address && (
           <div className="user-input">
