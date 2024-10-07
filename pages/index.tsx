@@ -19,8 +19,8 @@ export default function Home() {
           <Image
             src="/therapist2.png"
             alt="AI Companion"
-            width={150}
-            height={150}
+            width={100}
+            height={100}
             className="rounded-md"
           />
         </div>
