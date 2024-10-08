@@ -28,7 +28,7 @@ const AssistantButton = ({
   
   const color =
     callStatus === CALL_STATUS.ACTIVE
-      ? "red"
+      ? "skyblue"
       : callStatus === CALL_STATUS.LOADING
       ? "orange"
       : "green";
@@ -39,7 +39,7 @@ const AssistantButton = ({
     height: "140px",
     color: "white",
     border: "none",
-    boxShadow: `1px 1px ${100 + audioLevel * 40}px ${audioLevel * 100}px ${color}`,
+    boxShadow: `1px 1px ${100 + audioLevel * 40}px ${audioLevel * 300}px ${color}`,
     backgroundColor:
       callStatus === CALL_STATUS.ACTIVE
         ? "red"
@@ -54,9 +54,13 @@ const AssistantButton = ({
       style={buttonStyle}
       className={`transition ease-in-out ${
         callStatus === CALL_STATUS.ACTIVE
+          
           ? "bg-red-500 hover:bg-red-700"
+ 
           : callStatus === CALL_STATUS.LOADING
+
           ? "bg-orange-500 hover:bg-orange-700"
+
           : "bg-green-500 hover:bg-green-700"
       } flex items-center justify-center`}
       onClick={
