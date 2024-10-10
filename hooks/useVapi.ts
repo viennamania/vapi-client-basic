@@ -125,7 +125,10 @@ export function useVapi() {
     let assistantID = "";
 
     if (assistantLanguage == "Korean") {
-      assistantID = "bd429aad-ac21-4d2c-b899-c77f227ca396";
+      
+      //assistantID = "bd429aad-ac21-4d2c-b899-c77f227ca396";
+      assistantID = "a518c801-f941-4929-8779-d6d8892dbfdb";
+
     } else if (assistantLanguage == "Chinese") {
       assistantID = "7a0e2e00-d99b-467b-8639-b343722faba5";
     } else if (assistantLanguage == "English") {
