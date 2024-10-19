@@ -126,9 +126,9 @@ export function useVapi() {
 
     if (assistantLanguage == "Korean") {
       
-      assistantID = "bd429aad-ac21-4d2c-b899-c77f227ca396";
+      //assistantID = "bd429aad-ac21-4d2c-b899-c77f227ca396";
       
-      //assistantID = "a518c801-f941-4929-8779-d6d8892dbfdb";
+      assistantID = "a518c801-f941-4929-8779-d6d8892dbfdb";
       
 
     } else if (assistantLanguage == "Chinese") {
